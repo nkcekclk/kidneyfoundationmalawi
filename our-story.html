@@ -479,7 +479,7 @@
         }
         
         .founder-image {
-            border-radius: 15px;
+            border-radius: 30px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -499,6 +499,19 @@
             padding-left: 20px;
             border-left: 3px solid var(--dark-pink);
         }
+
+        .developer-name {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.developer-name:hover,
+.developer-name:focus,
+.developer-name:active {
+    text-decoration: none;
+}
+
         
         /* Footer with Scroll Up Arrow */
         footer {
@@ -600,7 +613,36 @@
             margin-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+         .objectives-section {
+            margin-top: 40px;
+        }
+
+        .objectives-section h4 {
+            font-size: 1.8rem;
+            color: var(--dark-pink);
+            margin-bottom: 20px;
+        }
+
+        .objectives-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .objectives-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .objectives-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-pink);
+            font-weight: bold;
+        }
         /* Responsive - FIXED MOBILE NAVIGATION */
         @media (max-width: 992px) {
             .header-container {
@@ -777,9 +819,9 @@
             <li>
                 <div class="mobile-nav-illustration">
                     <div class="illustration-icon">
-                        <i class="fas fa-female"></i>
+                        <i class=""></i>
                     </div>
-                    <div class="illustration-text"></div>
+                    <div class="illustration-text"><b>Together we can reduce chronic Kidney Disease</b></div>
                 </div>
             </li>
             <li><a href="index.html">
@@ -840,14 +882,6 @@
                 </div>
                 Contact
             </a></li>
-            <li>
-                <div class="mobile-nav-illustration">
-                    <div class="illustration-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="illustration-text"></div>
-                </div>
-            </li>
         </ul>
     </div>
     
@@ -892,6 +926,20 @@
                     <p class="founder-quote">
                         “We believe that everyone deserves access to kidney care, because healthy kidneys mean healthier families, stronger communities, and longer lives.”
                     </p>
+
+                     <!-- OBJECTIVES -->
+                <div class="objectives-section">
+                    <h4>Our Objectives</h4>
+                    <ul class="objectives-list">
+                        <li>To identify the problems and challenges faced by patients and develop sustainable solutions to improve their quality of life.</li>
+                        <li>To improve and support renal services in Malawi.</li>
+                        <li>To conduct awareness campaigns for the general public on kidney disease and available support services.</li>
+                        <li>To provide a common platform for raising awareness on kidney problems in Malawi and reducing specific risk factors.</li>
+                        <li>To mobilize resources to support people living with kidney problems.</li>
+                        <li>To network dialysis units, healthcare management, and patients to work collaboratively.</li>
+                        <li>To advocate for effective kidney disease and NCD prevention and control policies reflecting the needs of people living with NCDs in Malawi.</li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
@@ -934,6 +982,12 @@
         
         <div class="footer-bottom">
             <p>&copy; <span id="currentYear"></span> Kidney Foundation Malawi. All rights reserved.</p>
+            <p>
+    Developed by 
+    <a href="https://www.linkedin.com/in/thom-kasimbi-87267b187/" class="developer-name">
+        Thom Kasimbi
+    </a>
+</p>
         </div>
     </footer>
 
